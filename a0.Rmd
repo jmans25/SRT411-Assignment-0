@@ -1,6 +1,7 @@
 ---
 title: "SRT411 Assignment 0 - REMOVE TUTORIAL CODE!!!"
 output: github_document
+URL: "https://github.com/jmans25/SRT411-Assignment-0"
 ---
 
 ```{r setup, include=FALSE}
