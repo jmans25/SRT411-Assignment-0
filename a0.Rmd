@@ -1,5 +1,6 @@
 ---
-title: "SRT411 Assignment 0 - REMOVE TUTORIAL CODE!!!"
+title: "SRT411 Assignment 0"
+author: "*By Jonathan Monteiro*"
 output: github_document
 URL: "https://github.com/jmans25/SRT411-Assignment-0"
 ---
@@ -8,26 +9,83 @@ URL: "https://github.com/jmans25/SRT411-Assignment-0"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## GitHub Documents
+## ToDo 3.1
+The result of ToDo 3.1: Calculator with 2014 changed to 2017 to reflect the current year:
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
-
-## Including Code
-
-You can include R code in the document as follows:
-
-```{r echo=FALSE}
-myTest <- c("jonathan", "monteiro", "015836158")
-summary(myTest)
-summary(cars)
+```{r}
+((2017-2015)/(2017-1996))*100
 ```
 
-## Including Plots
+## ToDo 3.2
+The result of ToDo 3.1 but using vars
 
+```{r}
+thisyear = 2017
+yearstarted = 2015
+bdayyear = 1996
+((thisyear-yearstarted)/(thisyear-bdayyear))*100
+```
+
+## ToDo 3.4
+Functions and Vectors
+
+```{r}
+nums <- c(4,5,8,11)
+sum(nums)
+```
+
+## ToDo 3.5
+Plotting
+
+```{r}
+plot(rnorm(100))
+```
+
+## ToDo 4
+Getting help
+
+```{r}
+?sqrt
+```
+
+## ToDo 5
+Saving commands to a script, and running a script
+
+```{r}
+invisible(file.create("foo.R"))
+writeLines("plot(rnorm(100))", file("foo.R"))
+source("foo.R")
+close(file("foo.R"))
+```
+
+## ToDo 6.2
+Matrices and Sequences
+
+```{r}
+P <- seq(31, 60)
+Q <- matrix(P, 6, 5)
+```
+
+## ToDo 6.3
+Data Frames
+
+```{r}
+###This is how I would make the script
+#invisible(file.create("foo.R"))
+#writeLines("commands_go_here", file("foo.R"))
+#source("foo.R")
+###Since this assignment is a script itself, I am ommiting the part where we have to make a script
+x1 <- rnorm(100)
+x2 <- rnorm(100)
+x3 <- rnorm(100)
+t <- data.frame(a = x1, b= x1+x2, c= x1+x2+x3)
+plot(t) #prints a 3x3 grid of plots, one for each col
+#sd(t) #got error "cannot be coerced to type 'double'"
+```
+
+## Including Plots << REMOVE THIS!
 You can also embed plots, for example:
 
 ```{r, echo=FALSE}
 plot(pressure)
 ```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
