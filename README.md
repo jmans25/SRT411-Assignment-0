@@ -1,6 +1,5 @@
 Assignment 0 for SRT411
 ================
-***Jonathan Monteiro (username:jmans25) *** <br/><br/>
 This is an assignment for my stats class. <br/>
 It is based off the tutorial at https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf <br/>
 Please open `SRT411A0.md` to see the assignment, and `SRT411A0.Rmd` to see the source code. <br/>
